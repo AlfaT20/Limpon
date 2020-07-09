@@ -60,21 +60,40 @@ h1 {
 	max-width: 1110px;
 	margin: 0 auto;
 }	
+
+.box-header {
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	margin-bottom: 305px;
+}
+
+.logo {
+	display: block;
+	width: 181px;
+	height: 49px;
+	background-image: url(../img/Logo-limpon.png);
+}
+
 .nav {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 	display: flex;
 }
+
 .nav>li {
-	padding: 0 15px;
+	padding: 0 20px;
 }
+
 .nav-item {
 	color: #6e7ea9;
+	letter-spacing: 2px;
 }
+
 .btn-primary {
 	color: #fff;
 	font-size: 12px;
@@ -88,7 +107,7 @@ h1 {
 }
 .btn-primary:hover {
 	color: #1085e4;
-	background-color: #fff;
+	background-color: transparent;
 }
 .btn-secondary {
 	color: #7e8bae;
@@ -116,17 +135,46 @@ h1 {
 	padding: 20px 40px;
 	border-radius: 30px;
 }
+
 .btn-info:hover {
-	color: #7e8bae;
-	background-color: #dce1e5;
+	color: #fff;
+	background-color: #94b4cc;
+	border: 1px solid #94b4cc;
 }
+
 .btn-free {
 	font-weight: 400;
 	padding: 21px 56px;
     letter-spacing: 1.7px;
 }
+
 .btn-group a + a {
 	margin-left: 15px;
+}
+
+.list-company {
+	list-style-type: none;
+}
+
+.list-company-item {
+	display: block;
+}
+
+.company-one {
+	background-image: url(../img/Logo-1.png);
+}
+
+.company-two {
+	background-image: url(../img/Logo-2.png);
+}
+
+
+.company-three {
+	background-image: url(../img/Logo-3.png);
+}
+
+.company-four {
+	background-image: url(../img/Logo-4.png);
 }
 
 .grid h2 {
@@ -184,6 +232,53 @@ h1 {
 
 .box-price-item {
 	background-color: #f5faff;
+	flex-basis: 32%;
+	position: relative;
+	padding: 90px 0 96px 0;
+}
+
+
+.box-price-item ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 34px; 
+	margin-bottom: 59px;
+	font-size: 14px;
+}
+
+.box-price-item ul>li {
+	margin-bottom: 14px;
+}
+
+.box-price-item h3 {
+	color: #000958;
+	font-size: 70px;
+	letter-spacing: -1px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.box-price-item h3 span{
+	font-size: 20px;
+}
+
+.box-price-item p {
+	color: #0084ff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 3px
+}
+
+.box-price-item:first-child h3 {
+	margin-bottom: 35px;
+}
+
+.box-price-item h3 span:first-child {
+	color: #000958;
+}
+
+.box-price-item h3 span:last-child {
+	color: #7b8ab2;
 }
 
 .box-price-item.active{
@@ -191,13 +286,48 @@ h1 {
 	color: #fff;
 }
 
-.box-price-item ul {
-	list-style-type: none;
-	padding-left: 0;
+.box-price-item.active h3{
+	color: #fff;
+}
+
+.box-price-item.active h3 span:first-child {
+	color: #fff;
+}
+
+.box-price-item::after {
+	content: "";
+	width: 58px;
+	height: 100%;
+	background-image: url(../img/tr.png);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.box-price-item.active::after {
+	display: none;
 }
 
 
+
+
+
+
 /* PAGE */
+
+.page-header {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 53px 0 330px 0;
+}
+
+.page-company {
+	background-image: url(../img/bg-blue.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .page-stat, .page-screen {
 	background-color: #edf6ff;
 	padding: 116px 0 96px 0;
@@ -215,3 +345,4 @@ h1 {
 .page-screen {
 	padding: 116px 0 0 0;
 }
+
